@@ -21,8 +21,8 @@ public class AppApplication {
 	public CommandLineRunner runner(StudentRepository studentRepository,
 									LessonRepository lessonRepository){
 		return (args) -> {
-			studentRepository.save(Student.builder().name("1").email("1@1.com").build());
-			studentRepository.save(Student.builder().name("2").email("2@2.com").build());
+			studentRepository.save(Student.builder().name("1").email("1234@1234.com").build());
+			studentRepository.save(Student.builder().name("2").email("2345@2345.com").build());
 			lessonRepository.save(Lesson.builder().name("L1").quota(15).build());
 			lessonRepository.save(Lesson.builder().name("L2").quota(15).build());
 		};
